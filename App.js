@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import { View, Text, Button} from 'react-native';
-import {MyList} from './src/components/MyList';
+import { View, Text, Button, SafeAreaView, FlatList} from 'react-native';
+import MyList from './src/components/MyList';
 
 
 class App extends Component
 {
 
   render(){
+
     return(
-      <View>
-        <MyList></MyList>
-      </View>
+      <SafeAreaView>
+        <MyList/>
+      </SafeAreaView>
     );
   }
 }
